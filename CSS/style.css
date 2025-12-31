@@ -1,33 +1,8 @@
-/* "@keyframes" keyword creates an animation with the given identifier */
-@keyframes change-color {
-    /* "from" denotes the starting state */
-    from {background-color: salmon; top: 0px; left: 0px;}
+/* import any helper css files */
+@import "header.css";
+@import "paragraph.css";
 
-    /* "to" denotes the ending state */
-    to {background-color: lightblue; top: 20px; left: 20px;}
-}
-
-@keyframes change-color-rainbow {
-    /* Percentages can be used to control when in the animation something occurs */
-    0% {background-color: red;}
-    16% {background-color: orange;}
-    32% {background-color: yellow;}
-    48% {background-color: green;}
-    64% {background-color: blue;}
-    80% {background-color: purple;}
-}
-
-.box-animation-1 {
-    position: relative;
-    animation-name: change-color;
-    animation-duration: 2s;
-    animation-iteration-count: 3;
-    animation-delay: 1s;
-}
-
-/* This would only play the animation while the element is hovered over */
-.box-animation-2:hover {
-    animation-name: change-color-rainbow;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
+/* You can override any of the CSS which was imported */
+h1 {
+    color: red;
 }
