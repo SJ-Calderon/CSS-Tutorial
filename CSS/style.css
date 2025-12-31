@@ -1,53 +1,49 @@
-#myId {
-    background-color: yellow;
+.container {
+    /* Display the flex items in a flexbox */
+    /* Can be displayed as a block (flex) or inline (inline-flex) */
+    display: flex;
+
+    /* Specifies how and in what order the flex items will be layed out */
+    /* Can be layed out in a row or a column */
+    flex-direction: row;
+
+    /* Specifies if and how the encapsulated items wrap around one another */
+    flex-wrap: wrap;
+
+    /* You can specify both direction and wrap using flex-flow */
+
+    /* Align flex items when they don't use all horizontal spacing */
+    justify-content: space-around;
+
+    /* Align flex items when they don't use all vertical spacing */
+    /* Aligns flex items with respect to the container */
+    align-items: flex-start;
+
+    /* Align flex items when there is extra space vertically and in the flex item wrap */
+    /* Aligns flex items with respect to each other along the cross-axis */
+    /* Since align-items and align-content both operate on the cross-axis, these will change how each work if used together */
+    /* align-content: center; */
+
+    height: 500px;  
+    background-color: coral;
 }
 
-.class1 {
-    background-color: blue;
+.container div {
+    background-color: lightblue;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 5px 5px 5px black;
 }
 
-.class2 {
-    background-color:  blueviolet;
+.box {
+    width: 100px;
+    height: 100px;
 }
 
-/* [attribute] will style any HTML element with the corresponding attribute */ 
-[title] {
-    color: chocolate;
-}
-
-/* You can specify the style based upon the state of the HTML element */
-input[type="checkbox"]:checked {
-    box-shadow: 2px 2px 2px red;
-}
-
-/* "*" will select all HTML elements
-* {
-    background-color: green;
-}
-*/
-
-/* A comma-separated list will apply the styling to all elements which are listed */
-h3, h4 {
-    background-color: aqua;
-}
-
-/* ">" is used to denote all of the 2nd element encapsulated by the 1st element */
-ol > li {
-    background-color: greenyellow;
-}
-
-/* "+" is used to denote all of the 2nd element that follow the 1st element */
-h2 + ol {
-    color: brown;
-}
-
-/* You can check for a specific attribute value */
-/* You can check for a specific element to have the corresponding attribute */
-li[title="march"] {
-    color: grey;
-}
-
-/* "*=" specifies any of the specified attribute which contains the specified text */
-li[title*="j"] {
-    color: bisque;
+.box2 {
+    width: 100px;
+    height: 60px;
 }

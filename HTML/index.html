@@ -8,19 +8,22 @@
 
     <body>
         <header>
-            <h1 id="myId">Selectors</h1>
+            <h1>Flexbox</h1>
         </header>
 
-        <main class="class2">
-            <p class="class1">CSS selectors will supercharge your CSS game!</p>
+        <main>
+            <!-- When creating a flexbox, you want a parent element -->
+            <!-- The parent element will have a unique class to style the flexbox -->
+            <div class="container">
+                <!-- Inside the parent element, you will have all the other elements for the flexbox -->
+                <div class="box"><h2>1</h2></div>
+                <div class="box2"><h2>2</h2></div>
+                <div class="box"><h2>3</h2></div>
 
-            <h2>Fruits</h2>
-            <ul>
-                <li><a href="">Apples</a></li>
-                <li>Oranges<input type="text" /></li>
-                <li><label><input type="checkbox" />Bananas</label></li>
-                <li title="lemons">Lemons</li>
-            </ul>
+                <!-- align-self overrides the default set by align-items -->
+                <div style="align-self: flex-end;" class="box2"><h2>4</h2></div>
+                <div class="box"><h2>5</h2></div>
+            </div>
         </main>
     </body>
 </html>
