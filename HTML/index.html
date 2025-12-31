@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS Tutorial</title>
+    </head>
+
+    <!-- Inline styling is inserted using style -->
+    <!-- You can put multiple attributes in a single HTML element -->
+    <!-- The style is inherited for all elements that are encapsulated by the HTML element -->
+    <body style="color: blue; font-size: 20px">
+        <header>
+            <!-- If the same attribute is defined in an encapsulated element, it will override the inherited style -->
+            <h1 style="color: red">Inline Styling</h1>
+        </header>
+        <!-- border takes 3 values: width style color -->
+        <!-- width can use percentage in addition to pixels -->
+        <!-- max-width will override width once the limit has been reached -->
+        <main style="border: 1px solid black; width: 80%; max-width: 500px;">
+            <p>This is a paragraph.</p>
+        </main>
+    </body>
+</html>
