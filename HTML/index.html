@@ -5,19 +5,18 @@
         <title>CSS Tutorial</title>
     </head>
 
-    <!-- Color can be specified by name -->
-    <body style="background-color: aquamarine;">
-
-        <!-- Color can be specified by hex value -->
-        <header style="background-color: #009900;">
-
-            <!-- Color can be specified by rgb value -->
-            <h1 style="color: rgb(102, 51, 0)">Colors</h1>
+    <body>
+        <header>
+            <h1>Padding and Margins</h1>
         </header>
 
-        <main>
-            <!-- Color can be specified by hsl value -->
-            <p style="color: hsl(302, 74%, 59%)">This is a paragraph.</p>
+        <!-- You can use padding or margins to specify top right bottom left at once -->
+        <!-- If a single value is specified, this is applied to all sides -->
+        <main style="padding: 50px 10px 50px 10px; margin: 25px; background-color: red;">
+
+            <!-- You can specify the specific padding and margins for individual sides -->
+            <p style="padding-top: 50px; padding-bottom: 60px; background-color: blue;">Padding is extra space on the inside.</p>
+            <p style="margin-top: 50px; padding-bottom: 40px; background-color: blueviolet;">Margins are extra space on the outside.</p>
         </main>
     </body>
 </html>
