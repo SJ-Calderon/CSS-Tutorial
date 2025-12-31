@@ -1,13 +1,53 @@
-/* "#" references an ID which is used in an HTML element */
-#header-h1 {
+#myId {
+    background-color: yellow;
+}
+
+.class1 {
+    background-color: blue;
+}
+
+.class2 {
+    background-color:  blueviolet;
+}
+
+/* [attribute] will style any HTML element with the corresponding attribute */ 
+[title] {
+    color: chocolate;
+}
+
+/* You can specify the style based upon the state of the HTML element */
+input[type="checkbox"]:checked {
+    box-shadow: 2px 2px 2px red;
+}
+
+/* "*" will select all HTML elements
+* {
     background-color: green;
 }
+*/
 
-/* "." denotes a CSS class that can be used by HTML elements */
-.fancy-border {
-    border: 3px dashed red;
+/* A comma-separated list will apply the styling to all elements which are listed */
+h3, h4 {
+    background-color: aqua;
 }
 
-.blue-text {
-    color: blue;
+/* ">" is used to denote all of the 2nd element encapsulated by the 1st element */
+ol > li {
+    background-color: greenyellow;
+}
+
+/* "+" is used to denote all of the 2nd element that follow the 1st element */
+h2 + ol {
+    color: brown;
+}
+
+/* You can check for a specific attribute value */
+/* You can check for a specific element to have the corresponding attribute */
+li[title="march"] {
+    color: grey;
+}
+
+/* "*=" specifies any of the specified attribute which contains the specified text */
+li[title*="j"] {
+    color: bisque;
 }
