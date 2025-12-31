@@ -3,19 +3,22 @@
     <head>
         <meta charset="UTF-8">
         <title>CSS Tutorial</title>
-
-        <!-- This applies external files to this page -->
-        <!-- CSS files are stylesheets. So, that needs to be input for rel -->
         <link rel="stylesheet" href="../CSS/style.css">
     </head>
 
     <body>
         <header>
-            <h1>External Style Sheets</h1>
+            <!-- IDs can be used to specify CSS for a single HTML element -->
+            <!-- Only a single ID can be used per each HTML element -->
+            <!-- IDs are really meant for single or few HTML elements -->
+            <h1 id="header-h1">IDs and Classes</h1>
         </header>
 
-        <main>
-            <p>Style tags are a great way to make using CSS easier.</p>
+        <!-- Classes can also be used to specify CSS for a single HTML element -->
+        <!-- Multple classes can be used by a single HTML element -->
+        <!-- Classes are meant for CSS reused for many HTML elements -->
+        <main class="fancy-border blue-text">
+            <p>Classes and IDs make it easy to reuse CSS code.</p>
         </main>
     </body>
 </html>
