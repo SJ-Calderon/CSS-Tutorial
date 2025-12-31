@@ -3,23 +3,33 @@
     <head>
         <meta charset="UTF-8">
         <title>CSS Tutorial</title>
+
+        <!-- Style tags are used to globally style HTML elements -->
+        <!-- Specify the tag to style and then put the CSS in curly braces -->
+        <!-- This will apply to all HTML elements with this tag -->
+        <style>
+            body {
+                color: blue;
+                background-color: red;
+            }
+            h1 {
+                color: green;
+            }
+        </style>
     </head>
 
     <body>
         <header>
-            <h1>Text & Fonts</h1>
+            <h1>Style Tags</h1>
         </header>
 
         <main>
-            <!-- Typical units for font-size include pixels and em -->
-            <!-- em is relative to the default browser font size -->
-            <!-- font-family specifies what font to use and backups if the previous font isn't available -->
-            <p style="color: blue; font-size: 1.25em; font-family: 'Arial Black', Gadget, sans-serif; font-style: italic; font-variant: small-caps; font-weight: bold;">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+            <h1>Header in main</h1>
+            <p>Style tags are a great way to make using CSS easier.</p>
         </main>
+
+        <footer>
+            <h1>Header in footer</h1>
+        </footer>
     </body>
 </html>
