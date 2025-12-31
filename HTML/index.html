@@ -5,19 +5,19 @@
         <title>CSS Tutorial</title>
     </head>
 
-    <!-- Inline styling is inserted using style -->
-    <!-- You can put multiple attributes in a single HTML element -->
-    <!-- The style is inherited for all elements that are encapsulated by the HTML element -->
-    <body style="color: blue; font-size: 20px">
-        <header>
-            <!-- If the same attribute is defined in an encapsulated element, it will override the inherited style -->
-            <h1 style="color: red">Inline Styling</h1>
+    <!-- Color can be specified by name -->
+    <body style="background-color: aquamarine;">
+
+        <!-- Color can be specified by hex value -->
+        <header style="background-color: #009900;">
+
+            <!-- Color can be specified by rgb value -->
+            <h1 style="color: rgb(102, 51, 0)">Colors</h1>
         </header>
-        <!-- border takes 3 values: width style color -->
-        <!-- width can use percentage in addition to pixels -->
-        <!-- max-width will override width once the limit has been reached -->
-        <main style="border: 1px solid black; width: 80%; max-width: 500px;">
-            <p>This is a paragraph.</p>
+
+        <main>
+            <!-- Color can be specified by hsl value -->
+            <p style="color: hsl(302, 74%, 59%)">This is a paragraph.</p>
         </main>
     </body>
 </html>
