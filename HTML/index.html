@@ -7,35 +7,22 @@
 
     <body>
         <header>
-            <h1>Display and Floats</h1>
+            <!-- By default, HTML elements are statically positioned -->
+            <!-- Static positioning follows the positioning per the HTML code order -->
+            <h1>Position</h1>
         </header>
 
         <main>
-            <!-- float allows other elements to wrap around the floating element -->
-            <!-- The direction specified is where the current element will be located -->
-            <ul style="float: left; background-color: lightblue; padding: 15px; margin: 0px;">
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact Us</li>
-                <li>Blogs</li>
-            </ul>
-            <p>You can use the display and float CSS attributes to change the way that elements on your website are displayed on the screen.</p>
-            <br /><br /><br /><br /><br />
-            <hr />
-            <!-- By default, span elements are displayed inline -->
-            <!-- Inline only takes the space needed for the element-->
-            <span>Item 1</span>
-            <span>Item 2</span>
-            <!-- By default, ul and li elements are displayed as blocks -->
-            <!-- Block takes as much space as it can horizontally -->
-            <ul style="background-color: lightblue; padding: 15px; margin: 0px;">
-                <li style="display: inline">Home</li>
-                <li style="display: inline">About</li>
-                <li style="display: inline">Contact Us</li>
+            <!-- Positioning does not work alone -->
+            <!-- You must specify the positioning using top, bottom, left, or right -->
+            <!-- Relative positioning uses the static position of the element as its reference -->
+            <div style="position: relative; top: 20px; left: 10px; width: 90px; height: 90px; background-color: blue;"></div>
+            
+            <!-- Absolute positioning uses the container of the element as its reference -->
+            <div style="position: absolute; bottom: 20px; right: 10px; width: 100px; height: 100px; background-color: red;"></div>
 
-                <!-- You can use display:none to hide elements -->
-                <li style="display: none">Blogs</li>
-            </ul>
+            <!-- Fixed positioning uses the viewport as its reference -->
+            <div style="position: fixed; bottom: 0px; left: 10px; width: 100px; height: 100px; background-color: green;"></div>
         </main>
     </body>
 </html>
