@@ -7,16 +7,35 @@
 
     <body>
         <header>
-            <h1>Padding and Margins</h1>
+            <h1>Display and Floats</h1>
         </header>
 
-        <!-- You can use padding or margins to specify top right bottom left at once -->
-        <!-- If a single value is specified, this is applied to all sides -->
-        <main style="padding: 50px 10px 50px 10px; margin: 25px; background-color: red;">
+        <main>
+            <!-- float allows other elements to wrap around the floating element -->
+            <!-- The direction specified is where the current element will be located -->
+            <ul style="float: left; background-color: lightblue; padding: 15px; margin: 0px;">
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact Us</li>
+                <li>Blogs</li>
+            </ul>
+            <p>You can use the display and float CSS attributes to change the way that elements on your website are displayed on the screen.</p>
+            <br /><br /><br /><br /><br />
+            <hr />
+            <!-- By default, span elements are displayed inline -->
+            <!-- Inline only takes the space needed for the element-->
+            <span>Item 1</span>
+            <span>Item 2</span>
+            <!-- By default, ul and li elements are displayed as blocks -->
+            <!-- Block takes as much space as it can horizontally -->
+            <ul style="background-color: lightblue; padding: 15px; margin: 0px;">
+                <li style="display: inline">Home</li>
+                <li style="display: inline">About</li>
+                <li style="display: inline">Contact Us</li>
 
-            <!-- You can specify the specific padding and margins for individual sides -->
-            <p style="padding-top: 50px; padding-bottom: 60px; background-color: blue;">Padding is extra space on the inside.</p>
-            <p style="margin-top: 50px; padding-bottom: 40px; background-color: blueviolet;">Margins are extra space on the outside.</p>
+                <!-- You can use display:none to hide elements -->
+                <li style="display: none">Blogs</li>
+            </ul>
         </main>
     </body>
 </html>
