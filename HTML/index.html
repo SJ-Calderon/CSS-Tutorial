@@ -7,22 +7,17 @@
 
     <body>
         <header>
-            <!-- By default, HTML elements are statically positioned -->
-            <!-- Static positioning follows the positioning per the HTML code order -->
-            <h1>Position</h1>
+            <!-- text-shadow creates a shadow with the specifications given -->
+            <!-- text-shadow can take horizontal, vertical, blur, and color attributes -->
+            <h1 style="text-shadow: 2px 2px 5px red; position:relative; top: 200px; left: 50px;">Shadow, Opacity, & Border Radius</h1>
         </header>
 
         <main>
-            <!-- Positioning does not work alone -->
-            <!-- You must specify the positioning using top, bottom, left, or right -->
-            <!-- Relative positioning uses the static position of the element as its reference -->
-            <div style="position: relative; top: 20px; left: 10px; width: 90px; height: 90px; background-color: blue;"></div>
-            
-            <!-- Absolute positioning uses the container of the element as its reference -->
-            <div style="position: absolute; bottom: 20px; right: 10px; width: 100px; height: 100px; background-color: red;"></div>
-
-            <!-- Fixed positioning uses the viewport as its reference -->
-            <div style="position: fixed; bottom: 0px; left: 10px; width: 100px; height: 100px; background-color: green;"></div>
+            <!-- Opacity takes values from 0.0 (invisible) to 1.0 (opaque) -->
+            <!-- box-shadow operates similar to text-shadow for images -->
+            <!-- border-radius controls how rounded the border will be -->
+            <!-- border-radius can use pixels or percentages -->
+            <img style="opacity: 0.4; box-shadow: 5px 5px 5px grey; border-radius: 10%;" src="../Images/css.jpg" alt="CSS3 Logo" width="600px" />
         </main>
     </body>
 </html>
