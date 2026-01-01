@@ -1,8 +1,0 @@
-/* import any helper css files */
-@import "header.css";
-@import "paragraph.css";
-
-/* You can override any of the CSS which was imported */
-h1 {
-    color: red;
-}
